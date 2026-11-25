@@ -1,0 +1,3 @@
+# Caché de Python (por ejemplo, al importar scripts/auditoria_cartera.py)
+__pycache__/
+*.py[cod]

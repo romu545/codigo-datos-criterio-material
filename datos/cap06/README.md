@@ -12,6 +12,6 @@ Los tres archivos se generan con `Rscript scripts/generar_datos_cap06.R`, desde 
 
 ## Archivos que se generan al trabajar el capítulo
 
-- `cartera_2026_t1_auditada.parquet` (Ejemplo 6.7): la cartera con la columna `problemas`, punto de partida del capítulo 7.
+- `cartera_2026_t1_auditada.parquet` (Ejemplo 6.7): la cartera con la columna `problemas`, que muestra el resultado de la auditoría. El capítulo 8 vuelve a partir de la cartera cruda y la limpia.
 
 Si reportas un error en los datos o en el libro, hazlo en el [repositorio del libro](https://github.com/romu545/codigo-datos-criterio/issues).

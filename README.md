@@ -17,6 +17,8 @@ Abre la carpeta descargada en Positron (**File → Open Folder…**). Todos los 
 | `datos/cap04/` | 4. Importación de datos II: formatos y fuentes | Libros de Excel, una respuesta de API en JSON y una base DuckDB |
 | `datos/cap05/` | 5. Importación de datos III: limpieza temprana | Una exportación de cartera en CSV y un libro de visitas en Excel, con nombres, faltantes, booleanos y fechas por resolver al leer |
 | `datos/cap06/` | 6. Tipos de datos y calidad | La cartera del primer trimestre, los clientes y los recaudos en Parquet, con problemas de calidad sembrados para auditar |
+| `datos/cap07/` | 7. Transformación y limpieza I: transformar y ordenar | Ventas, productos, sucursales, metas en formato ancho y pedidos con varios productos por celda; el archivo de 10 millones de filas se genera con un script |
+| `datos/cap08/` | 8. Transformación y limpieza II: limpiar | Una exportación de CRM con textos escritos de varias formas y clientes repetidos; la limpieza completa usa la cartera de `datos/cap06/` |
 | `scripts/` | | Scripts que generan los datos |
 
 Cada carpeta de datos tiene su propio `README.md` con el detalle de los archivos.
@@ -34,7 +36,15 @@ Rscript scripts/generar_datos_cap05.R
 
 # Capítulo 6: cartera del trimestre, clientes y recaudos
 Rscript scripts/generar_datos_cap06.R
+
+# Capítulo 7: ventas, catálogos, metas, pedidos y el archivo grande (unos 120 MB)
+Rscript scripts/generar_datos_cap07.R
+
+# Capítulo 8: exportación del CRM
+Rscript scripts/generar_datos_cap08.R
 ```
+
+La carpeta `scripts/` también tiene `auditoria_cartera.R` y `auditoria_cartera.py`, con las reglas de calidad del capítulo 6 que el capítulo 8 reutiliza.
 
 Los scripts necesitan los paquetes de R `DBI`, `duckdb`, `arrow` y `openxlsx2`, que se instalan al comienzo del capítulo 3 del libro.
 
