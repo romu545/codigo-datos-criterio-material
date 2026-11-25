@@ -1,0 +1,8 @@
+# Archivos generados durante los ejercicios del capítulo 3
+*.duckdb.wal
+
+# Entornos y cachés
+.venv/
+__pycache__/
+.Rproj.user/
+.Rhistory
