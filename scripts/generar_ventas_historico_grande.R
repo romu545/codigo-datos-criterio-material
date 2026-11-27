@@ -16,7 +16,10 @@ destino <- "datos/cap04/ventas_historico_grande.csv"
 
 con <- dbConnect(duckdb())
 
-dbExecute(con, sprintf("
+dbExecute(
+  con,
+  sprintf(
+    "
   COPY (
     SELECT
       i + 1 AS id_venta,
@@ -36,8 +39,17 @@ dbExecute(con, sprintf("
     ) AS s ON s.k = hash(i, 'sucursal') %% 8
     ORDER BY id_venta
   ) TO '%s' (HEADER, DELIMITER ',')
-", n_filas, destino))
+",
+    n_filas,
+    destino
+  )
+)
 
 dbDisconnect(con)
-message("Archivo creado: ", destino, " (",
-        round(file.size(destino) / 1024^2, 1), " MB)")
+message(
+  "Archivo creado: ",
+  destino,
+  " (",
+  round(file.size(destino) / 1024^2, 1),
+  " MB)"
+)

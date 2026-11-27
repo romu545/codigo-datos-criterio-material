@@ -17,8 +17,11 @@ set.seed(2026)
 dir.create("datos/cap06", showWarnings = FALSE, recursive = TRUE)
 
 # Clientes del capítulo 4 ---------------------------------------------------
-con <- DBI::dbConnect(duckdb::duckdb(), dbdir = "datos/cap04/operaciones.duckdb",
-                      read_only = TRUE)
+con <- DBI::dbConnect(
+  duckdb::duckdb(),
+  dbdir = "datos/cap04/operaciones.duckdb",
+  read_only = TRUE
+)
 clientes <- DBI::dbGetQuery(con, "SELECT * FROM clientes ORDER BY nit")
 DBI::dbDisconnect(con)
 
@@ -43,18 +46,18 @@ registro <- as.POSIXct(emision, tz = "UTC") +
 attr(registro, "tzone") <- "America/Bogota"
 
 cartera <- data.frame(
-  factura           = sprintf("FV-%05d", 20001:(20000 + n)),
-  nit               = clientes$nit[idx],
-  fecha_emision     = emision,
+  factura = sprintf("FV-%05d", 20001:(20000 + n)),
+  nit = clientes$nit[idx],
+  fecha_emision = emision,
   fecha_vencimiento = vencimiento,
-  fecha_pago        = as.Date(ifelse(pagada, pago, NA)),
-  valor_factura     = valor,
-  pagada            = pagada,
-  cliente_activo    = runif(n) < 0.85,
-  calificacion      = calificacion,
-  ciudad            = clientes$ciudad[idx],
-  saldo             = ifelse(pagada, 0, valor),
-  registrado_en     = registro
+  fecha_pago = as.Date(ifelse(pagada, pago, NA)),
+  valor_factura = valor,
+  pagada = pagada,
+  cliente_activo = runif(n) < 0.85,
+  calificacion = calificacion,
+  ciudad = clientes$ciudad[idx],
+  saldo = ifelse(pagada, 0, valor),
+  registrado_en = registro
 )
 
 # Filas disponibles para sembrar problemas sin que se pisen entre sí
@@ -106,7 +109,11 @@ cartera$calificacion[tomar(1)] <- 7L
 
 # Problema: año mal digitado (2062 en lugar de 2026)
 f <- tomar(1, no_pagadas)
-cartera$fecha_emision[f] <- as.Date(sub("^2026", "2062", format(cartera$fecha_emision[f])))
+cartera$fecha_emision[f] <- as.Date(sub(
+  "^2026",
+  "2062",
+  format(cartera$fecha_emision[f])
+))
 
 # Problema: pago anterior a la emisión
 pagadas <- which(cartera$pagada)
@@ -140,19 +147,23 @@ rownames(cartera) <- NULL
 arrow::write_parquet(cartera, "datos/cap06/cartera_2026_t1.parquet")
 
 # 2. Recaudos del primer trimestre (ejercicio) ------------------------------
-sanas <- cartera[cartera$pagada & !is.na(cartera$fecha_pago) &
-                   cartera$fecha_pago >= cartera$fecha_emision &
-                   cartera$saldo == 0 & !duplicated(cartera$factura) &
-                   !duplicated(cartera$factura, fromLast = TRUE), ]
+sanas <- cartera[
+  cartera$pagada &
+    !is.na(cartera$fecha_pago) &
+    cartera$fecha_pago >= cartera$fecha_emision &
+    cartera$saldo == 0 &
+    !duplicated(cartera$factura) &
+    !duplicated(cartera$factura, fromLast = TRUE),
+]
 m <- nrow(sanas)
 medios <- c("Transferencia", "Transferencia", "PSE", "Cheque", "Efectivo")
 
 recaudos <- data.frame(
-  recaudo         = sprintf("RC-%04d", seq_len(m)),
-  factura         = sanas$factura,
-  fecha_recaudo   = sanas$fecha_pago,
+  recaudo = sprintf("RC-%04d", seq_len(m)),
+  factura = sanas$factura,
+  fecha_recaudo = sanas$fecha_pago,
   valor_recaudado = sanas$valor_factura,
-  medio_pago      = sample(medios, m, replace = TRUE)
+  medio_pago = sample(medios, m, replace = TRUE)
 )
 
 libres <- seq_len(m)
@@ -190,5 +201,10 @@ rownames(recaudos) <- NULL
 
 arrow::write_parquet(recaudos, "datos/cap06/recaudos_2026_t1.parquet")
 
-message("Datos del capítulo 6 generados en datos/cap06/ (",
-        nrow(cartera), " facturas, ", nrow(recaudos), " recaudos)")
+message(
+  "Datos del capítulo 6 generados en datos/cap06/ (",
+  nrow(cartera),
+  " facturas, ",
+  nrow(recaudos),
+  " recaudos)"
+)
