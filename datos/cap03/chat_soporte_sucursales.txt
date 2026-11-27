@@ -1,0 +1,13 @@
+5/01/26, 8:02 a. m. - Los mensajes y las llamadas están cifrados de extremo a extremo. Nadie fuera de este chat, ni siquiera WhatsApp, puede leerlos ni escucharlos.
+5/01/26, 8:15 a. m. - Laura Gómez: Buenos días. ¿Ya cargaron los recaudos de diciembre de la sucursal Pasto?
+5/01/26, 8:21 a. m. - Andrés Ruiz: Todavía no, el archivo llegó con otro nombre de columna
+5/01/26, 8:22 a. m. - Andrés Ruiz: Ahora dice valor_total en vez de vlr_total
+5/01/26, 8:40 a. m. - Laura Gómez: Ok. Revisa también los NIT, en el de noviembre se perdieron ceros
+5/01/26, 9:05 a. m. - Camila Ortiz: Envío el resumen de Medellín:
+ventas: 182 registros
+recaudos: 75 registros
+5/01/26, 9:07 a. m. - Camila Ortiz: <Multimedia omitido>
+6/01/26, 2:30 p. m. - Andrés Ruiz: Listo, ya quedó cargado Pasto
+6/01/26, 2:31 p. m. - Laura Gómez: Gracias, quedo atenta
+12/01/26, 10:12 a. m. - Camila Ortiz: ¿Alguien tiene el catálogo de sucursales actualizado?
+12/01/26, 10:15 a. m. - Laura Gómez: Está en la carpeta compartida, hoja Sucursales

@@ -1,0 +1,8 @@
+# Archivos grandes o generados durante los ejercicios del capítulo 4
+ventas_historico_grande.csv
+ventas_historico.parquet
+ventas_2025_particionado/
+ventas_2025_particionado_duckdb/
+consolidado_cap04.parquet
+copia_api.*
+*.duckdb.wal

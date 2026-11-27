@@ -1,0 +1,460 @@
+{
+  "status": "ok",
+  "paginacion": {
+    "pagina": 1,
+    "por_pagina": 50,
+    "total": 50
+  },
+  "resultados": [
+    {
+      "id_operacion": 1,
+      "fecha": "2026-01-20",
+      "monto_usd": 1721.34,
+      "cliente": {
+        "nit": "0516815654",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 2,
+      "fecha": "2026-01-14",
+      "monto_usd": 2875.45,
+      "cliente": {
+        "nit": "0360653251",
+        "ciudad": "Barranquilla"
+      }
+    },
+    {
+      "id_operacion": 3,
+      "fecha": "2026-01-04",
+      "monto_usd": 961.34,
+      "cliente": {
+        "nit": "0277069447",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 4,
+      "fecha": "2026-01-08",
+      "monto_usd": 808.72,
+      "cliente": {
+        "nit": "0128781621",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 5,
+      "fecha": "2026-01-27",
+      "monto_usd": 2287.1,
+      "cliente": {
+        "nit": "0736913884",
+        "ciudad": "Cartagena"
+      }
+    },
+    {
+      "id_operacion": 6,
+      "fecha": "2026-01-27",
+      "monto_usd": 552.43,
+      "cliente": {
+        "nit": "0772424608",
+        "ciudad": "Barranquilla"
+      }
+    },
+    {
+      "id_operacion": 7,
+      "fecha": "2026-01-27",
+      "monto_usd": 2453.27,
+      "cliente": {
+        "nit": "0337932767",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 8,
+      "fecha": "2026-01-14",
+      "monto_usd": 2598.46,
+      "cliente": {
+        "nit": "0554474328",
+        "ciudad": "Cali"
+      }
+    },
+    {
+      "id_operacion": 9,
+      "fecha": "2026-01-12",
+      "monto_usd": 807.15,
+      "cliente": {
+        "nit": "0870194874",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 10,
+      "fecha": "2026-01-02",
+      "monto_usd": 1347.16,
+      "cliente": {
+        "nit": "0586238092",
+        "ciudad": "Medellín"
+      }
+    },
+    {
+      "id_operacion": 11,
+      "fecha": "2026-01-08",
+      "monto_usd": 1689.66,
+      "cliente": {
+        "nit": "0691181931",
+        "ciudad": "Medellín"
+      }
+    },
+    {
+      "id_operacion": 12,
+      "fecha": "2026-01-14",
+      "monto_usd": 474.16,
+      "cliente": {
+        "nit": "0523027606",
+        "ciudad": "Pasto"
+      }
+    },
+    {
+      "id_operacion": 13,
+      "fecha": "2026-01-17",
+      "monto_usd": 1861.72,
+      "cliente": {
+        "nit": "0407743590",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 14,
+      "fecha": "2026-01-07",
+      "monto_usd": 905.34,
+      "cliente": {
+        "nit": "0712926540",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 15,
+      "fecha": "2026-01-28",
+      "monto_usd": 2208.41,
+      "cliente": {
+        "nit": "0211285306",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 16,
+      "fecha": "2026-01-11",
+      "monto_usd": 1248.2,
+      "cliente": {
+        "nit": "0800828444",
+        "ciudad": "Cartagena"
+      }
+    },
+    {
+      "id_operacion": 17,
+      "fecha": "2026-01-17",
+      "monto_usd": 1184.55,
+      "cliente": {
+        "nit": "0562588038",
+        "ciudad": "Pasto"
+      }
+    },
+    {
+      "id_operacion": 18,
+      "fecha": "2026-01-15",
+      "monto_usd": 2139.1,
+      "cliente": {
+        "nit": "0820289585",
+        "ciudad": "Cartagena"
+      }
+    },
+    {
+      "id_operacion": 19,
+      "fecha": "2026-01-26",
+      "monto_usd": 1337.73,
+      "cliente": {
+        "nit": "0260138660",
+        "ciudad": "Barranquilla"
+      }
+    },
+    {
+      "id_operacion": 20,
+      "fecha": "2026-01-14",
+      "monto_usd": 1303.62,
+      "cliente": {
+        "nit": "0252225541",
+        "ciudad": "Pasto"
+      }
+    },
+    {
+      "id_operacion": 21,
+      "fecha": "2026-01-09",
+      "monto_usd": 3315.6,
+      "cliente": {
+        "nit": "0230476486",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 22,
+      "fecha": "2026-01-09",
+      "monto_usd": 1141.07,
+      "cliente": {
+        "nit": "0211285306",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 23,
+      "fecha": "2026-01-20",
+      "monto_usd": 1327.93,
+      "cliente": {
+        "nit": "0562588038",
+        "ciudad": "Pasto"
+      }
+    },
+    {
+      "id_operacion": 24,
+      "fecha": "2026-01-15",
+      "monto_usd": 1850.25,
+      "cliente": {
+        "nit": "0117418327",
+        "ciudad": "Cartagena"
+      }
+    },
+    {
+      "id_operacion": 25,
+      "fecha": "2026-01-15",
+      "monto_usd": 651.32,
+      "cliente": {
+        "nit": "0349912483",
+        "ciudad": "Cartagena"
+      }
+    },
+    {
+      "id_operacion": 26,
+      "fecha": "2026-01-31",
+      "monto_usd": 4592.05,
+      "cliente": {
+        "nit": "0689826882",
+        "ciudad": "Cali"
+      }
+    },
+    {
+      "id_operacion": 27,
+      "fecha": "2026-01-27",
+      "monto_usd": 1688.24,
+      "cliente": {
+        "nit": "0596506528",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 28,
+      "fecha": "2026-01-10",
+      "monto_usd": 207.68,
+      "cliente": {
+        "nit": "0848005136",
+        "ciudad": "Cartagena"
+      }
+    },
+    {
+      "id_operacion": 29,
+      "fecha": "2026-01-24",
+      "monto_usd": 2233.62,
+      "cliente": {
+        "nit": "0691181931",
+        "ciudad": "Medellín"
+      }
+    },
+    {
+      "id_operacion": 30,
+      "fecha": "2026-01-12",
+      "monto_usd": 892.46,
+      "cliente": {
+        "nit": "0469890736",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 31,
+      "fecha": "2026-01-24",
+      "monto_usd": 1745.09,
+      "cliente": {
+        "nit": "0511805083",
+        "ciudad": "Cali"
+      }
+    },
+    {
+      "id_operacion": 32,
+      "fecha": "2026-01-02",
+      "monto_usd": 619.39,
+      "cliente": {
+        "nit": "0923624213",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 33,
+      "fecha": "2026-01-15",
+      "monto_usd": 2253.1,
+      "cliente": {
+        "nit": "0667725831",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 34,
+      "fecha": "2026-01-31",
+      "monto_usd": 1439.4,
+      "cliente": {
+        "nit": "0634302049",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 35,
+      "fecha": "2026-01-04",
+      "monto_usd": 1578.11,
+      "cliente": {
+        "nit": "0518401500",
+        "ciudad": "Medellín"
+      }
+    },
+    {
+      "id_operacion": 36,
+      "fecha": "2026-01-12",
+      "monto_usd": 2562.95,
+      "cliente": {
+        "nit": "0580691787",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 37,
+      "fecha": "2026-01-31",
+      "monto_usd": 234.45,
+      "cliente": {
+        "nit": "0306563437",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 38,
+      "fecha": "2026-01-11",
+      "monto_usd": 1348.03,
+      "cliente": {
+        "nit": "0584524401",
+        "ciudad": "Cúcuta"
+      }
+    },
+    {
+      "id_operacion": 39,
+      "fecha": "2026-01-23",
+      "monto_usd": 1117.02,
+      "cliente": {
+        "nit": "0500935740",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 40,
+      "fecha": "2026-01-27",
+      "monto_usd": 1119.33,
+      "cliente": {
+        "nit": "0386563911",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 41,
+      "fecha": "2026-01-25",
+      "monto_usd": 1954.51,
+      "cliente": {
+        "nit": "0634302049",
+        "ciudad": "Santa Marta"
+      }
+    },
+    {
+      "id_operacion": 42,
+      "fecha": "2026-01-07",
+      "monto_usd": 1388.21,
+      "cliente": {
+        "nit": "0391295313",
+        "ciudad": "Pasto"
+      }
+    },
+    {
+      "id_operacion": 43,
+      "fecha": "2026-01-31",
+      "monto_usd": 1736.78,
+      "cliente": {
+        "nit": "0952057756",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 44,
+      "fecha": "2026-01-15",
+      "monto_usd": 1738.36,
+      "cliente": {
+        "nit": "0296654268",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 45,
+      "fecha": "2026-01-11",
+      "monto_usd": 987.26,
+      "cliente": {
+        "nit": "0974216631",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 46,
+      "fecha": "2026-01-17",
+      "monto_usd": 1010.3,
+      "cliente": {
+        "nit": "0589292657",
+        "ciudad": "Barranquilla"
+      }
+    },
+    {
+      "id_operacion": 47,
+      "fecha": "2026-01-08",
+      "monto_usd": 1083.79,
+      "cliente": {
+        "nit": "0128781621",
+        "ciudad": "Bogotá"
+      }
+    },
+    {
+      "id_operacion": 48,
+      "fecha": "2026-01-01",
+      "monto_usd": 1621.1,
+      "cliente": {
+        "nit": "0260138660",
+        "ciudad": "Barranquilla"
+      }
+    },
+    {
+      "id_operacion": 49,
+      "fecha": "2026-01-18",
+      "monto_usd": 1468.84,
+      "cliente": {
+        "nit": "0284211518",
+        "ciudad": "Medellín"
+      }
+    },
+    {
+      "id_operacion": 50,
+      "fecha": "2026-01-05",
+      "monto_usd": 1082.6,
+      "cliente": {
+        "nit": "0592467657",
+        "ciudad": "Medellín"
+      }
+    }
+  ]
+}

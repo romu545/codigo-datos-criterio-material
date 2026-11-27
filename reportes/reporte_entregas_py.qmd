@@ -1,0 +1,93 @@
+---
+title: "Entregas a domicilio"
+format:
+  html:
+    embed-resources: true
+jupyter: python3
+execute:
+  echo: false
+  warning: false
+---
+
+```{python}
+#| tags: [parameters]
+sucursal = "S03"
+mes = "2026-04"
+```
+
+```{python}
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path("..").resolve()))
+import matplotlib.pyplot as plt
+import pandas as pd
+from IPython.display import Markdown
+from scripts.flujo_entregas import leer_crudo, armonizar, validar, resumir
+
+carpeta = Path("../datos/cap13")
+rutas = sorted(str(p) for p in (carpeta / "entregas").glob("*.csv")) + [
+    str(carpeta / "abril" / "entregas_2026_04.csv")
+]
+pedidos = validar(armonizar(leer_crudo(rutas)))
+indicadores = resumir(pedidos)
+
+mes_reporte = indicadores[indicadores["mes"] == mes]
+esta = mes_reporte[mes_reporte["sucursal"] == sucursal].iloc[0]
+red = pedidos[
+    (pedidos["canal"] != "retiro")
+    & (pedidos["fecha"].dt.strftime("%Y-%m") == mes)
+]
+pct_red = 100 * (red["tiempo_entrega_h"] > 20).mean()
+
+
+def numero(x, digitos=1):
+    return (
+        f"{x:,.{digitos}f}".replace(",", "X")
+        .replace(".", ",")
+        .replace("X", ".")
+    )
+
+
+def contar(n, singular, plural):
+    return f"{n} {singular if n == 1 else plural}"
+```
+
+## `{python} sucursal`, `{python} mes`
+
+En el mes, la sucursal **`{python} sucursal`** entregó **`{python} contar(int(esta['pedidos']), 'pedido', 'pedidos')`** a domicilio. La mitad llegó en menos de **`{python} numero(esta['mediana_horas'])` horas**, y el **`{python} numero(esta['pct_tardias'])` %** tardó más de 20 horas, frente al `{python} numero(pct_red)` % del conjunto de la red.
+
+```{python}
+#| label: evolucion
+#| fig-alt: "Porcentaje de entregas tardías por mes: la sucursal del reporte en negro y las demás en gris."
+fig, ax = plt.subplots(figsize=(7, 3))
+for s, d in indicadores.groupby("sucursal"):
+    destacada = s == sucursal
+    ax.plot(
+        d["mes"],
+        d["pct_tardias"],
+        color="black" if destacada else "0.8",
+        lw=2.5 if destacada else 1,
+        zorder=3 if destacada else 1,
+    )
+ax.set_title(
+    f"Entregas tardías de {sucursal} frente al resto de la red", loc="left"
+)
+ax.spines[["top", "right"]].set_visible(False)
+plt.show()
+```
+
+```{python}
+#| label: tabla
+Markdown(
+    mes_reporte[
+        [
+            "sucursal",
+            "pedidos",
+            "mediana_horas",
+            "pct_tardias",
+            "pct_devueltos",
+        ]
+    ].to_markdown(index=False)
+)
+```

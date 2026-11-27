@@ -1,0 +1,256 @@
+"registro","nit","razon_social","ciudad","telefono","correo","contacto","actualizado"
+"CRM-0001","0647431462","CARIBE 086 S.A.S.","Cali","6025486494","gerencia@caribe086sas.com.co","Paula Ortiz",2026-02-19
+"CRM-0002","0793229303","Tropical 114 SAS","Cartagena","7953194","CARTERA@TROPICAL114SAS.COM.CO","Jorge Ramírez",2024-03-28
+"CRM-0003","0760531397","Costeña 059 S.A.S.","Cúcuta","+57 6072323908"," cartera@costena059sas.com.co ","Luisa Fernández",2025-05-16
+"CRM-0004","681.787.605","Tropical 085 S.A.S.","Bogotá","N/A","contabilidad@tropical085sas.com.co","Jorge Ramírez",2025-03-18
+"CRM-0005","0241041289","Llanera 140 S.A.S.","Cali","(602) 628 5223","CONTABILIDAD@LLANERA140SAS.COM.CO","LUISA FERNÁNDEZ",2025-05-27
+"CRM-0006","0161666403","Del Valle 157 S.A.S.","Cali","(308) 267 9597","cartera@delvalle157sas.com.co","MARÍA PÉREZ",2024-03-23
+"CRM-0007","0957136273","Nacional  080  S.A.S. ","Cali","6526680","cartera@nacional080sas.com.co","Luisa Fernández",2025-10-26
+"CRM-0008","0304870301","Caribe 094 S.A.S.","Cartagena","(317) 666 3155","gerencia@caribe094sas.com.co","Felipe Castaño",2026-02-17
+"CRM-0009","0452550127","Costeña 008 SAS","Cali","8736203"," compras@costena008sas.com.co ","FELIPE CASTAÑO",2026-02-16
+"CRM-0010","0680216450","Nacional 021 S.A.S.","Medellín","(316) 743 6953","gerencia@nacional021sas.com.co","Julián Peña",2024-10-10
+"CRM-0011","0379363963","Andina 160 S.A.S.","Cali","N/A","contabilidad@andina160sas.com.co","Paula Ortiz",2026-02-23
+"CRM-0012","0691181931","Central 096 S.A.S.","MEDELLIN","604-742-0104","contabilidad@central096sas.com.co","MARÍA PÉREZ",2024-04-25
+"CRM-0013"," 0112836112","Montanera 171 S.A.S.","Pasto","6024539574","compras@montanera171sas.com.co","LUISA FERNÁNDEZ",2025-02-21
+"CRM-0014","326414932","Andina 199 S.A.S.","PASTO","(602) 777 1550","compras@andina199sas.com.co","FELIPE CASTAÑO",2024-12-29
+"CRM-0015","0349358143","Cafetera 139 S.A.S.","Cúcuta","(306) 236 3070","cartera@cafetera139sas.com.co","luisa fernández",2025-08-27
+"CRM-0016","0855496133","Costena 148 S.A.S.",,"+57 3087677239","CONTABILIDAD@COSTENA148SAS.COM.CO","Paula Ortiz",2024-11-28
+"CRM-0017","0760531397","Costena 059 S.A.S.","Cúcuta","+57 6075103599","cartera@costena059sas.com.co","Natalia Ríos",2024-06-10
+"CRM-0018","0514221439","Del Sur 027 S.A.S.",,"(605) 718 1677",,"Paula Ortiz",2025-01-30
+"CRM-0019","0516815654","Costeña 003 S.A.S.","Bogota","N/A","contabilidad@costena003sas.com.co","Luisa Fernández",2024-09-12
+"CRM-0020","0607805648","Cafetera 121 S.A.S.","Pasto","304-948-1496","compras@cafetera121sas.com.co","JORGE RAMÍREZ",2025-06-01
+"CRM-0021","0800828444","Pacífico 100 S.A.S.","Cartagena","N/A",,"Natalia Ríos",2025-07-18
+"CRM-0022","667725831","Del Valle 170 S.A.S.","BOGOTA","3039034662",,"María Pérez",2025-07-18
+"CRM-0023","0755334715","Pacífico 155 S.A.S.","Bogotá","7184421","cartera@pacifico155sas.com.co","Jorge Ramírez",2024-01-02
+"CRM-0024","0337932767","Cafetera 151 S.A.S.","Santa Marta","7720652","contabilidad@cafetera151sas.com.co","ANDRÉS GÓMEZ",2025-01-14
+"CRM-0025","0123878040","TROPICAL 117 S.A.S.","Pasto","4603518","contabilidad@tropical117sas.com.co","Julián Peña",2025-11-28
+"CRM-0026","0916743381","Central 143 SAS","Cartagena","6053923270","compras@central143sas.com.co","MARÍA PÉREZ",2024-08-11
+"CRM-0027","0869228052","NACIONAL 107 S.A.S.","Cúcuta","(607) 873 5101","compras@nacional107sas.com.co","Luisa Fernández",2024-09-25
+"CRM-0028","0252225541","Tropical 146 S.A.S.","pasto","N/A","gerencia@tropical146sas.com.co","  Paula   Ortiz",2024-10-29
+"CRM-0029","0596506528","Central 024 S.A.S.","Santa Marta","6053221256","cartera@central024sas.com.co","LUISA FERNÁNDEZ",2024-03-14
+"CRM-0030","0329889047","Central 101 S.A.S.","Barranquilla","7210627","gerencia@central101sas.com.co","  Julián   Peña",2025-12-09
+"CRM-0031","0622054129","Central 015 SAS",,"6072853575","GERENCIA@CENTRAL015SAS.COM.CO","Luisa Fernández",2025-04-09
+"CRM-0032","277.069.447","Llanera 128 S.A.S.","BOGOTA","3011012355","gerencia@llanera128sas.com.co","Andrés Gómez",2024-07-10
+"CRM-0033","284.871.151","PACÍFICO 082 S.A.S.","Cúcuta","607-223-4003","gerencia@pacifico082sas.com.co","maría pérez",2025-10-18
+"CRM-0034","0800828444","Pacífico 100 S.A.S.","CARTAGENA","3079232040","compras@pacifico100sas.com.co","Jorge Ramírez",2025-09-17
+"CRM-0035","759.545.798","Caribe  167  S.A.S. ","BOGOTA","5268574","cartera@caribe167sas.com.co","Jorge Ramírez",2024-01-17
+"CRM-0036","0936297022","Tropical 067 S.A.S.","CARTAGENA","+57 3215627061","contabilidad@tropical067sas.com.co","Jorge Ramírez",2024-03-01
+"CRM-0037","0470651440","Llanera 102 S.A.S.","Cartagena de Indias","N/A","cartera@llanera102sas.com.co","Óscar Muñoz",2024-04-24
+"CRM-0038","0386563911","Tropical 196 S.A.S.","Santa Marta","(605) 604 3070",,"MARÍA PÉREZ",2026-01-10
+"CRM-0039","0592467657","LLANERA 054 S.A.S.","Medellin","6044250941",,"Natalia Ríos",2025-10-18
+"CRM-0040","0710097772","Tropical 133 S.A.S.","Cali","N/A","gerencia@tropical133sas.com.co","Óscar Muñoz",2024-03-12
+"CRM-0041","0709915234","Costeña  071  S.A.S. ","Barranquilla","6052577146","compras@costena071sas.com.co","Felipe Castaño",2025-10-05
+"CRM-0042","0495023517","Andina 131 S.A.S.","Barranquilla","+57 3145006051","contabilidad@andina131sas.com.co","camila díaz",2024-12-02
+"CRM-0043","0698518045","Pacífico 095 S.A.S.","Cúcuta","(607) 745 0910","gerencia@pacifico095sas.com.co","Jorge Ramírez",2025-12-29
+"CRM-0044","875.951.620","Caribe 185 S.A.S.","Cali","(309) 595 5497",,"Paula Ortiz",2025-10-20
+"CRM-0045","390.520.205","Caribe 029 S.A.S.","Bogotá","3048744061","cartera@caribe029sas.com.co","  Óscar   Muñoz",2024-08-18
+"CRM-0046","0241041289","Llanera 140 S.A.S.","Cali","(321) 117 2433","contabilidad@llanera140sas.com.co","Natalia Ríos",2025-01-21
+"CRM-0047","0330479038","Costeña 089 S.A.S.","Barranqilla","3207216230","cartera@costena089sas","  Camila   Díaz",2025-05-03
+"CRM-0048","0655477612","COSTEÑA 153 S.A.S.","Santiago de Cali","3124065592",,"  Julián   Peña",2026-02-27
+"CRM-0049","0913010509","Montanera 090 S.A.S.","Medellín","3126047519","cartera@montanera090sas.com.co","Paula Ortiz",2024-12-08
+"CRM-0050"," 0277069447","Llanera 128 SAS","Bogotá D.C.","6012045346","contabilidad@llanera128sas","Luisa Fernández",2024-03-31
+"CRM-0051","0600808717","LLANERA 132 S.A.S.","Santa Marta","313-892-1303","gerencia@llanera132sas.com.co","Julián Peña",2024-08-18
+"CRM-0052","0738702752","Andina  150  S.A.S. ","Santa  Marta","6058830583","cartera@andina150sas.com.co","  María   Pérez",2025-09-01
+"CRM-0053","0799856422","Del  Sur  005  S.A.S. "," Cali","(305) 748 8671","contabilidad@delsur005sas","jorge ramírez",2024-01-24
+"CRM-0054","0952632102","Tropical 056 S.A.S.","Cartagena","3103804860","cartera@tropical056sas.com.co","Julián Peña",2024-10-14
+"CRM-0055","548.587.332","Costeña 169 SAS","Cali","602-777-0557",,"Camila Díaz",2025-08-19
+"CRM-0056","0776627272","Central 088 S.A.S.","Cucuta","607-830-3146","contabilidad@central088sas.com.co","  María   Pérez",2025-10-31
+"CRM-0057","0394337558","Costeña 023 S.A.S.","Cucuta","6075468903","contabilidad@costena023sas.com.co","ÓSCAR MUÑOZ",2024-01-25
+"CRM-0058","0128781621","Nacional 118 S.A.S.","Bogota","N/A"," cartera@nacional118sas.com.co ","Óscar Muñoz",2026-01-15
+"CRM-0059","0675149452","Llanera 064 S.A.S.","Pasto","6024420322"," compras@llanera064sas.com.co ","LUISA FERNÁNDEZ",2025-11-13
+"CRM-0060","0308000724","Del  Sur  099  S.A.S. ",,"+57 3002065031","compras@delsur099sas.com.co","Camila Díaz",2024-04-01
+"CRM-0061","394.337.558","Costeña 023 S.A.S.","Cúcuta","6072018286","gerencia@costena023sas.com.co","óscar muñoz",2026-01-08
+"CRM-0062","0341992569","Caribe 028 S.A.S.","Pasto","7706763","cartera@caribe028sas.com.co","PAULA ORTIZ",2025-01-17
+"CRM-0063","634302049","Nacional 072 S.A.S.","Santa Marta","+57 6058583093","gerencia@nacional072sas.com.co","Luisa Fernández",2025-02-07
+"CRM-0064","0345947720","Del Sur 013 S.A.S.","CUCUTA","315-184-0201","compras@delsur013sas.com.co","María Pérez",2024-12-27
+"CRM-0065","0515704374","Andina 052 SAS","Cali","7666970","gerencia@andina052sas.com.co","Jorge Ramírez",2024-07-06
+"CRM-0066","0117418327","Caribe 122 S.A.S.","CARTAGENA","3205680363","cartera@caribe122sas.com.co","Paula Ortiz",2026-01-02
+"CRM-0067","0372300067","Del Valle 046 S.A.S.","Cúcuta","607-686-7566","gerencia@delvalle046sas.com.co","  Andrés   Gómez",2024-02-15
+"CRM-0068","0861370820","Del Sur 016 S.A.S.","Medellin","6045277029","contabilidad@delsur016sas.com.co","Natalia Ríos",2025-07-09
+"CRM-0069","0772424608","CAFETERA 106 S.A.S.","Barranquilla","3116178683","contabilidad@cafetera106sas.com.co","Julián Peña",2024-11-12
+"CRM-0070","0133139836","Nacional 093 S.A.S.","Barranquilla","3241711677",,"Camila Díaz",2024-07-05
+"CRM-0071","0376811069","Caribe  044  S.A.S. ","Barranquilla","6054188498","cartera@caribe044sas.com.co","ANDRÉS GÓMEZ",2025-01-28
+"CRM-0072","326.414.932","Andina 199 S.A.S.","Pasto","602-372-0109","CONTABILIDAD@ANDINA199SAS.COM.CO","julián peña",2024-08-26
+"CRM-0073","0870194874","COSTEÑA 137 S.A.S.","Cucuta","3184604572","gerencia@costena137sas.com.co","Felipe Castaño",2026-02-05
+"CRM-0074","469.890.736","PACÍFICO 031 S.A.S.","Cúcuta","6073147619",,"Julián Peña",2025-07-21
+"CRM-0075","452.118.420","Costeña 173 S.A.S.","SANTA MARTA","(605) 478 5230","COMPRAS@COSTENA173SAS.COM.CO","  Luisa   Fernández",2024-03-04
+"CRM-0076","0870194874","COSTEÑA 137 S.A.S.","Cucuta","(310) 892 9401","gerencia@costena137sas.com.co","luisa fernández",2025-03-02
+"CRM-0077","0349912483","Cafetera 178 S.A.S.","CARTAGENA","+57 3096969451","CARTERA@CAFETERA178SAS.COM.CO","  Óscar   Muñoz",2026-03-28
+"CRM-0078","0736050921","LLANERA 145 S.A.S.","Medellín","6043935745","compras@llanera145sas.com.co","Jorge Ramírez",2024-01-29
+"CRM-0079","0622054129","Central 015 S.A.S.","Cúcuta","3179751413","compras@central015sas.com.co","Luisa Fernández",2025-07-09
+"CRM-0080","0255294348","Andina 104 S.A.S.","Santiago de Cali","+57 3107390124","cartera@andina104sas.com.co","Julián Peña",2025-10-20
+"CRM-0081","159753216","Caribe 047 S.A.S.","Pasto","8308576","contabilidad@caribe047sas.com.co","julián peña",2024-02-23
+"CRM-0082","0339385173","Caribe  109  S.A.S. ","Pasto","(602) 834 6414","contabilidad@caribe109sas.com.co","LUISA FERNÁNDEZ",2025-02-21
+"CRM-0083","0275015391","Del Valle 197 SAS","Santa Marta","6052251166","compras@delvalle197sas.com.co","LUISA FERNÁNDEZ",2025-11-04
+"CRM-0084","500935740","Cafetera 063 S.A.S.","Santa Marta","+57 6053464352",,"Luisa Fernández",2025-05-25
+"CRM-0085","0588854284","Montañera 108 S.A.S.","Barranquilla","(319) 544 8396","gerencia@montanera108sas","  María   Pérez",2025-03-08
+"CRM-0086","0514221439","Del Sur 027 S.A.S.","Cartagena de Indias","3142097332",,"JORGE RAMÍREZ",2025-08-19
+"CRM-0087","0284211518","Cafetera 062 S.A.S.","Medellín","604-828-7491","contabilidad@cafetera062sas.com.co","Paula Ortiz",2025-03-16
+"CRM-0088","0681112965","Llanera 188 S.A.S.","Pasto","N/A","gerencia@llanera188sas.com.co","María Pérez",2026-03-30
+"CRM-0089","0750279602","Costeña 001 S.A.S.","Pasto","(602) 813 9478","gerencia@costena001sas","Luisa Fernández",2025-08-16
+"CRM-0090","0308136087","Montañera 081 S.A.S.","Barranquilla","3259440","gerencia@montanera081sas.com.co","Andrés Gómez",2024-05-17
+"CRM-0091","0356712495","Pacífico 144 S.A.S.","B/quilla","(605) 435 4635","gerencia@pacifico144sas.com.co","JORGE RAMÍREZ",2025-09-15
+"CRM-0092","0691181931","Central 096 SAS","Medellin","3163635804","gerencia@central096sas.com.co","Óscar Muñoz",2025-07-16
+"CRM-0093","0308000724","DEL SUR 099 S.A.S.","Santa Marta","+57 6056410534","gerencia@delsur099sas.com.co","  Andrés   Gómez",2024-04-24
+"CRM-0094","689826882","Pacífico 105 SAS","Cali","6025262913","cartera@pacifico105sas.com.co","Felipe Castaño",2024-05-28
+"CRM-0095","0417101903","Tropical 127 S.A.S."," Cali","6027058175","gerencia@tropical127sas.com.co","  Luisa   Fernández",2024-12-06
+"CRM-0096","0410599476","Andina 180 SAS","SANTA MARTA","(605) 443 3152","contabilidad@andina180sas.com.co","Andrés Gómez",2024-03-23
+"CRM-0097","683612579","Caribe 040 S.A.S.","Medellín","6043601783","contabilidad@caribe040sas.com.co","Julián Peña",2025-10-05
+"CRM-0098","0150942924","Del Valle 012 S.A.S.","Pasto","(311) 955 8733","gerencia@delvalle012sas.com.co","MARÍA PÉREZ",2025-09-04
+"CRM-0099","0181517181","Central 076 SAS","B/quilla","(605) 659 4662","gerencia@central076sas.com.co","  Jorge   Ramírez",2025-10-03
+"CRM-0100","0853438061","Costeña 181 S.A.S."," Cali","602-732-9132","contabilidad@costena181sas.com.co","natalia ríos",2025-06-21
+"CRM-0101","0875951620","Caribe 185 S.A.S.","Santiago de Cali","5714944","cartera@caribe185sas.com.co","Jorge Ramírez",2024-11-08
+"CRM-0102","0096295065","COSTEÑA 165 S.A.S.","Bogotá D.C.","601-297-6995","gerencia@costena165sas.com.co","camila díaz",2024-06-02
+"CRM-0103","958832342","Llanera 120 S.A.S.","Pasto","3141029707","gerencia@llanera120sas.com.co","Natalia Ríos",2024-06-28
+"CRM-0104","0509231277","Costeña 126 SAS","Barranqilla","3026967","cartera@costena126sas.com.co","Paula Ortiz",2025-12-08
+"CRM-0105","0740214566","MONTAÑERA 183 S.A.S.","Medellin","3048514418","cartera@montanera183sas.com.co","Felipe Castaño",2024-01-13
+"CRM-0106","0452550127","Costeña 008 S.A.S.","Cali","6027900879"," cartera@costena008sas.com.co ","luisa fernández",2025-01-07
+"CRM-0107","0940391609","Montañera 018 SAS","Cúcuta","(308) 835 9528","contabilidad@montanera018sas.com.co","ÓSCAR MUÑOZ",2026-02-20
+"CRM-0108","0330479038","Costeña 089 S.A.S.","Barranquilla","6052205123",,"  María   Pérez",2024-01-14
+"CRM-0109","0952057756","Del Valle 134 S.A.S.","Bogotá","601-779-7327","contabilidad@delvalle134sas.com.co","  María   Pérez",2024-01-07
+"CRM-0110","0974216631","CENTRAL 163 S.A.S.","Bogota D.C.","N/A",,"Luisa Fernández",2024-04-27
+"CRM-0111","0786943817","Cafetera 182 S.A.S.","Santa  Marta","3261495","compras@cafetera182sas.com.co","María Pérez",2025-11-10
+"CRM-0112","0205558202","Pacifico 103 S.A.S.","BOGOTA","(319) 669 2061",,"Camila Díaz",2025-07-17
+"CRM-0113","0584524401","Pacífico 164 S.A.S.","Cúcuta","N/A","compras@pacifico164sas.com.co","Andrés Gómez",2024-03-20
+"CRM-0114","0580691787","Costeña 161 S.A.S.","Santa Marta","605-571-6734","compras@costena161sas.com.co","  Andrés   Gómez",2026-02-15
+"CRM-0115","0198422169","Del Sur 124 S.A.S.","Cali","3118404910","GERENCIA@DELSUR124SAS.COM.CO","Felipe Castaño",2025-11-19
+"CRM-0116","0391621533","Costena 130 S.A.S.","SANTA MARTA","6402395","cartera@costena130sas.com.co","Camila Díaz",2025-06-09
+"CRM-0117","0469194506","Del Sur 035 S.A.S.","Barranquilla","3035465518","CARTERA@DELSUR035SAS.COM.CO","Luisa Fernández",2025-03-15
+"CRM-0118","0349912483","Cafetera 178 S.A.S.","Cartagena","(311) 780 7882","compras@cafetera178sas.com.co","camila díaz",2025-04-15
+"CRM-0119","0759545798","Caribe 167 S.A.S.","Bogota D.C.","6013787791","gerencia@caribe167sas.com.co","ANDRÉS GÓMEZ",2025-07-28
+"CRM-0120","0586238092","Andina  198  S.A.S. ","Medellín","6045404420","gerencia@andina198sas.com.co","  Felipe   Castaño",2024-02-10
+"CRM-0121","0758117276","Del Sur 042 S.A.S.","Cartagena","N/A","contabilidad@delsur042sas.com.co","MARÍA PÉREZ",2024-08-11
+"CRM-0122","0192274194","COSTEÑA 084 S.A.S.","Cali","602-226-1075","cartera@costena084sas.com.co","Julián Peña",2024-05-11
+"CRM-0123","505695237","Central 166 S.A.S.","Barranquilla","(321) 453 2934","contabilidad@central166sas.com.co","PAULA ORTIZ",2026-01-13
+"CRM-0124","0296654268","Del Valle 158 S.A.S.","Bogota","(315) 109 8501",,"JORGE RAMÍREZ",2024-04-04
+"CRM-0125","0306563437","Montañera 112 S.A.S.","Cúcuta","6072508355","contabilidad@montanera112sas.com.co","FELIPE CASTAÑO",2025-04-21
+"CRM-0126"," 0858053946","Nacional 177 S.A.S.","B/quilla","N/A",,"LUISA FERNÁNDEZ",2024-10-11
+"CRM-0127","0518401500","LLANERA 154 S.A.S.","MEDELLIN","(604) 627 0416",,"  Felipe   Castaño",2024-03-07
+"CRM-0128","0337932767","CAFETERA 151 S.A.S.","Santa Marta","3183719418"," cartera@cafetera151sas.com.co ","  Paula   Ortiz",2025-10-28
+"CRM-0129","0320010637","Montañera 051 S.A.S.","Santa Marta","3084050795"," cartera@montanera051sas.com.co ","PAULA ORTIZ",2025-09-16
+"CRM-0130","0971663263","Nacional 149 S.A.S.","Santa Marta","2425847",,"Natalia Ríos",2024-02-15
+"CRM-0131","0726262541","Pacifico 065 S.A.S.","Santa Marta","310-798-4072","compras@pacifico065sas.com.co","JULIÁN PEÑA",2024-04-28
+"CRM-0132","0250122778","Del Sur 176 S.A.S.","Cartagena","(605) 201 3763","contabilidad@delsur176sas.com.co","Jorge Ramírez",2025-11-08
+"CRM-0133","0399406991","Del Sur 070 S.A.S.","CALI","6028754773"," cartera@delsur070sas.com.co ","  Óscar   Muñoz",2025-06-07
+"CRM-0134","759545798","Caribe  167  S.A.S. ","Bogotá D.C.","N/A","gerencia@caribe167sas.com.co","María Pérez",2024-06-27
+"CRM-0135","772.424.608","Cafetera 106 SAS","B/quilla","+57 6052148988","cartera@cafetera106sas.com.co","Natalia Ríos",2024-05-02
+"CRM-0136","511.805.083","TROPICAL 060 S.A.S.","CALI","+57 3195080772",,"  María   Pérez",2024-12-30
+"CRM-0137","0326414932","Andina  199  S.A.S. ","Pasto","3084532376",,"  Julián   Peña",2026-03-16
+"CRM-0138","0414885422","NACIONAL 017 S.A.S.","pasto","N/A","gerencia@nacional017sas.com.co","Natalia Ríos",2024-05-01
+"CRM-0139","469194506","Del Sur 035 S.A.S.","BARRANQUILLA","6056919878","cartera@delsur035sas.com.co","  Luisa   Fernández",2024-02-19
+"CRM-0140"," 0914076182","Central 069 S.A.S.","Medellín","3139514895","CONTABILIDAD@CENTRAL069SAS.COM.CO","Paula Ortiz",2024-07-24
+"CRM-0141","0857982290","Del Sur 138 S.A.S.",,"+57 3019900002","gerencia@delsur138sas.com.co","  Camila   Díaz",2024-08-07
+"CRM-0142","735655054","Pacifico 066 S.A.S.","Pasto","(602) 363 7480","cartera@pacifico066sas.com.co","ANDRÉS GÓMEZ",2024-09-17
+"CRM-0143","0391295313","CAFETERA 011 S.A.S.","Pasto","+57 3208691320","contabilidad@cafetera011sas.com.co","PAULA ORTIZ",2024-05-17
+"CRM-0144"," 0250122778","DEL SUR 176 S.A.S.","Cartagena","6053135410","compras@delsur176sas.com.co","Natalia Ríos",2025-09-15
+"CRM-0145","0710437572","Tropical 156 S.A.S.","Santa Marta","6054188094","contabilidad@tropical156sas.com.co","MARÍA PÉREZ",2024-01-14
+"CRM-0146","0719023654","Costeña 057 SAS","CALI","(306) 410 5503","cartera@costena057sas.com.co","MARÍA PÉREZ",2025-01-22
+"CRM-0147","904635636","Andina 174 S.A.S.","Barranquilla","6058772383","gerencia@andina174sas.com.co","Jorge Ramírez",2025-01-06
+"CRM-0148","0855496133","COSTEÑA 148 S.A.S.","Santa Marta","N/A",,"Felipe Castaño",2025-11-23
+"CRM-0149","0735655054","PACÍFICO 066 S.A.S.","pasto","3033797459","compras@pacifico066sas.com.co","Jorge Ramírez",2024-09-10
+"CRM-0150","0117271384","Nacional 020 SAS","Cali","+57 3091120928","gerencia@nacional020sas.com.co","NATALIA RÍOS",2025-12-27
+"CRM-0151","092348875","Montañera 077 S.A.S.","Barranquilla","+57 6055286057","gerencia@montanera077sas","LUISA FERNÁNDEZ",2024-10-13
+"CRM-0152","0391621533","Costeña 130 S.A.S.","Santa Marta","(605) 459 1290","compras@costena130sas.com.co","Felipe Castaño",2025-02-06
+"CRM-0153","0863495783","Del Sur 045 S.A.S.","Cali","3227551558","compras@delsur045sas.com.co","  Jorge   Ramírez",2024-11-04
+"CRM-0154","0204890748","Costeña  098  S.A.S. ","Cúcuta","+57 3132010814","compras@costena098sas.com.co","óscar muñoz",2024-07-01
+"CRM-0155","0783217318","TROPICAL 189 S.A.S.","Cartagena","+57 3216512293","cartera@tropical189sas.com.co","Óscar Muñoz",2025-04-01
+"CRM-0156","0425028553","Tropical 079 S.A.S.","Bogota","6017318069"," contabilidad@tropical079sas.com.co ","Natalia Ríos",2025-01-02
+"CRM-0157","0870194874","Costeña 137 S.A.S.","Cucuta","6077750566","compras@costena137sas.com.co","Paula Ortiz",2025-05-27
+"CRM-0158","0615077929","CENTRAL 175 S.A.S.","Cartagena de Indias","6052543350",,"jorge ramírez",2026-01-12
+"CRM-0159","248409547","Central 129 S.A.S.","Medellin","6044762932","compras@central129sas.com.co","Julián Peña",2026-03-15
+"CRM-0160","0180882712","Nacional 087 S.A.S.","Bogotá","3208927437","gerencia@nacional087sas.com.co","Julián Peña",2024-01-29
+"CRM-0161","0759997701","Montanera 186 S.A.S.","Santa Marta","6053587374","cartera@montanera186sas.com.co","Jorge Ramírez",2024-07-09
+"CRM-0162","0848005136","Del Sur 068 SAS","CARTAGENA","3054975439"," compras@delsur068sas.com.co ","jorge ramírez",2025-08-27
+"CRM-0163","0686665203","LLANERA 159 S.A.S.","Bogota D.C.","6497925"," contabilidad@llanera159sas.com.co ","JULIÁN PEÑA",2024-03-07
+"CRM-0164","0484330509","Andina 110 S.A.S.","B/quilla","6058964468","contabilidad@andina110sas","Luisa Fernández",2024-05-07
+"CRM-0165","0538801975","Costeña 172 S.A.S.","CARTAGENA","+57 3242724138","contabilidad@costena172sas.com.co","Luisa Fernández",2025-05-27
+"CRM-0166","392347368","Pacífico 053 SAS","Medellín","(604) 865 5250"," contabilidad@pacifico053sas.com.co ","LUISA FERNÁNDEZ",2024-01-08
+"CRM-0167","0413615255","Tropical 091 S.A.S.","Cartagena","3024097508","cartera@tropical091sas.com.co","ANDRÉS GÓMEZ",2025-01-26
+"CRM-0168","0349912483","Cafetera 178 S.A.S.","CARTAGENA","(605) 312 3876","gerencia@cafetera178sas.com.co","  Óscar   Muñoz",2024-09-13
+"CRM-0169","0881488853","Cafetera 195 S.A.S.","PASTO","7786422","COMPRAS@CAFETERA195SAS.COM.CO","  Andrés   Gómez",2024-12-28
+"CRM-0170","210183005","TROPICAL 007 S.A.S.","Bogotá D.C.","318-239-2224","gerencia@tropical007sas","Paula Ortiz",2024-05-07
+"CRM-0171","0779432707","Del Valle 010 S.A.S.","Cali","602-427-5334","gerencia@delvalle010sas.com.co","camila díaz",2025-09-28
+"CRM-0172","0636132942","Costeña 014 S.A.S.","Santa Marta","6052849472","compras@costena014sas.com.co","NATALIA RÍOS",2025-10-03
+"CRM-0173","0230476486","Pacífico 111 SAS","Bogotá D.C.","601-634-7406","compras@pacifico111sas.com.co","LUISA FERNÁNDEZ",2024-06-01
+"CRM-0174","0890548521","Tropical 061 S.A.S.","SANTA MARTA","(605) 405 8235","cartera@tropical061sas.com.co","PAULA ORTIZ",2025-03-03
+"CRM-0175","0284871151","Pacifico 082 S.A.S.","Cúcuta","6074449487","contabilidad@pacifico082sas.com.co","Andrés Gómez",2024-03-08
+"CRM-0176","0869228052","Nacional  107  S.A.S. ","Cúcuta","6075060890","CARTERA@NACIONAL107SAS.COM.CO","ANDRÉS GÓMEZ",2025-08-05
+"CRM-0177"," 0826483708","Central 026 S.A.S.","Cúcuta","607-705-2555","gerencia@central026sas","MARÍA PÉREZ",2024-06-23
+"CRM-0178","0505695237","Central 166 S.A.S.","B/quilla","(605) 739 9823","compras@central166sas.com.co","Paula Ortiz",2024-09-13
+"CRM-0179","0820289585","Llanera 142 S.A.S.","CARTAGENA","6056555634","gerencia@llanera142sas.com.co","  Óscar   Muñoz",2024-04-07
+"CRM-0180","0469194506","Del Sur 035 S.A.S.","Barranquilla","3558298","gerencia@delsur035sas.com.co","Julián Peña",2025-09-07
+"CRM-0181","0213202814","Llanera 075 S.A.S.","Cartagena","(321) 516 8766","compras@llanera075sas.com.co","  Julián   Peña",2026-02-12
+"CRM-0182","0159753216","Caribe 047 S.A.S.","PASTO","7069933"," gerencia@caribe047sas.com.co ","jorge ramírez",2025-08-22
+"CRM-0183","409.554.912","Del Sur 043 S.A.S.","Bogotá","3086922640","contabilidad@delsur043sas.com.co","julián peña",2024-04-26
+"CRM-0184","0643957446","Central  006  S.A.S. ","BARRANQUILLA","6057052649","gerencia@central006sas.com.co","JORGE RAMÍREZ",2025-09-19
+"CRM-0185"," 0330479038","Costena 089 S.A.S.","BARRANQUILLA","304-143-3625",,"JULIÁN PEÑA",2025-04-11
+"CRM-0186","0498774044","Andina 048 S.A.S.","Bogotá","3177287902",,"PAULA ORTIZ",2024-07-08
+"CRM-0187","399406991","Del Sur 070 S.A.S.","Cali","319-475-6963","cartera@delsur070sas.com.co","JULIÁN PEÑA",2025-04-24
+"CRM-0188","0712926540","Andina 125 S.A.S.","Cúcuta","+57 6074669333","COMPRAS@ANDINA125SAS.COM.CO","Julián Peña",2024-03-07
+"CRM-0189","0211285306","Tropical 004 S.A.S.","CUCUTA","6075937288","contabilidad@tropical004sas.com.co","Óscar Muñoz",2025-08-23
+"CRM-0190","119.446.540","Llanera 030 S.A.S.","Cartagena","4411425",,"Camila Díaz",2024-11-29
+"CRM-0191","458.424.930","Costeña 074 S.A.S.","Cartagena","6057799206","CARTERA@COSTENA074SAS.COM.CO","Camila Díaz",2025-08-08
+"CRM-0192","0567658534","Montañera 058 S.A.S.",,"+57 6055432441","compras@montanera058sas.com.co","NATALIA RÍOS",2024-10-10
+"CRM-0193","0719426604","Nacional 200 S.A.S.","Cartagena","6057660321"," compras@nacional200sas.com.co ","Natalia Ríos",2024-10-25
+"CRM-0194","0350448865","Llanera 049 S.A.S.","Barranquilla","6053955531","gerencia@llanera049sas.com.co","Natalia Ríos",2025-02-06
+"CRM-0195","407743590","Caribe 078 S.A.S.","Santa  Marta","8969772","GERENCIA@CARIBE078SAS.COM.CO","PAULA ORTIZ",2024-05-24
+"CRM-0196","895846524","Nacional 193 S.A.S.","Bogotá","6013392447","compras@nacional193sas.com.co","andrés gómez",2026-02-24
+"CRM-0197","0816009744","Andina 152 S.A.S.","Cartagena","322-883-9900","gerencia@andina152sas.com.co","  Luisa   Fernández",2025-01-29
+"CRM-0198","0221551591","Pacífico 097 SAS","Medellin","6398048","contabilidad@pacifico097sas.com.co","Andrés Gómez",2025-02-16
+"CRM-0199","0562588038","Cafetera 073 S.A.S.","Pasto","+57 3087772044","compras@cafetera073sas.com.co","Camila Díaz",2025-12-05
+"CRM-0200","0452118420","Costena 173 S.A.S.","Santa  Marta","3184115549","cartera@costena173sas.com.co","Natalia Ríos",2024-05-20
+"CRM-0201","0425028553","Tropical 079 SAS","bogotá","6015703092","CONTABILIDAD@TROPICAL079SAS.COM.CO","  Andrés   Gómez",2024-04-07
+"CRM-0202","0345947720","Del Sur 013 S.A.S.","Cúcuta","6075594508","contabilidad@delsur013sas.com.co","Óscar Muñoz",2025-11-25
+"CRM-0203","0977258531","Llanera 039 S.A.S.","Medellín","604-611-7029","gerencia@llanera039sas.com.co","felipe castaño",2025-01-20
+"CRM-0204","0376903873","Nacional 092 S.A.S.","Barranquilla","605-257-7488","contabilidad@nacional092sas.com.co","Óscar Muñoz",2025-04-08
+"CRM-0205","0895846524","Nacional 193 S.A.S.","Bogota","(601) 537 1137"," contabilidad@nacional193sas.com.co ","Felipe Castaño",2024-08-15
+"CRM-0206","589.292.657","Cafetera  034  S.A.S. ","Barranquilla","6058265024","CARTERA@CAFETERA034SAS.COM.CO","MARÍA PÉREZ",2025-12-17
+"CRM-0207","0935200975","Cafetera 037 S.A.S.","Medellín","3151260306","gerencia@cafetera037sas.com.co","MARÍA PÉREZ",2024-06-28
+"CRM-0208","538801975","Costeña 172 S.A.S.","CARTAGENA","6052579241","compras@costena172sas.com.co","María Pérez",2024-11-27
+"CRM-0209","0360653251","Del Valle 141 S.A.S.","Barranquilla","N/A","contabilidad@delvalle141sas.com.co","Óscar Muñoz",2025-05-20
+"CRM-0210"," 0609371849","Central 168 SAS","Bogotá","(601) 804 6713","cartera@central168sas.com.co","Luisa Fernández",2026-02-25
+"CRM-0211","0235322138","Del Valle 162 S.A.S.","Cali","(602) 679 0820","cartera@delvalle162sas.com.co","Camila Díaz",2025-11-01
+"CRM-0212","360.653.251","Del Valle 141 S.A.S.","Barranquilla","3071814357","contabilidad@delvalle141sas","Luisa Fernández",2025-05-07
+"CRM-0213","0498774044","Andina 048 S.A.S.","BOGOTA","6013550025","gerencia@andina048sas.com.co","Camila Díaz",2024-08-31
+"CRM-0214","0418756550","Pacífico 116 S.A.S.","Barranquilla","6055188263","gerencia@pacifico116sas.com.co","PAULA ORTIZ",2025-01-22
+"CRM-0215","866.411.792","Tropical 192 SAS","Cúcuta","+57 3021640083","contabilidad@tropical192sas.com.co","Andrés Gómez",2025-09-25
+"CRM-0216"," 0736913884","Cafetera 147 S.A.S.","Cartagena","605-230-9215","COMPRAS@CAFETERA147SAS.COM.CO","  Óscar   Muñoz",2024-03-18
+"CRM-0217","0986320995","Nacional 179 S.A.S.","Cartagena","(321) 488 0416"," compras@nacional179sas.com.co ","FELIPE CASTAÑO",2025-04-01
+"CRM-0218","0220656340","Cafetera 009 S.A.S.","CUCUTA","3108165548","cartera@cafetera009sas.com.co","Camila Díaz",2024-08-11
+"CRM-0219","0505960863","DEL SUR 187 S.A.S.","MEDELLIN","+57 3101679177",,"Jorge Ramírez",2025-01-05
+"CRM-0220","470.651.440","Llanera 102 S.A.S.","CARTAGENA","(605) 459 4812","contabilidad@llanera102sas.com.co","ANDRÉS GÓMEZ",2026-01-22
+"CRM-0221","0554474328","Pacífico 038 S.A.S.","Cali","6022126360","compras@pacifico038sas.com.co","Camila Díaz",2024-10-01
+"CRM-0222","0452550127","Costena 008 S.A.S.","Cali","N/A"," cartera@costena008sas.com.co ","  Óscar   Muñoz",2024-09-07
+"CRM-0223"," 0272620496","Pacífico 194 S.A.S.","Cartagena","+57 6052603749","cartera@pacifico194sas.com.co","paula ortiz",2024-12-30
+"CRM-0224","0500935740","Cafetera 063 SAS","Santa Marta","(605) 849 6229",,"  Paula   Ortiz",2024-07-25
+"CRM-0225","875.951.620","Caribe 185 SAS","Cali","6911078","cartera@caribe185sas.com.co","ANDRÉS GÓMEZ",2025-01-21
+"CRM-0226","0160535614","Del Sur 190 S.A.S.","Cúcuta","+57 6077301816","contabilidad@delsur190sas.com.co","Natalia Ríos",2025-06-26
+"CRM-0227","0857982290","Del Sur 138 SAS","CUCUTA","6078588978","CONTABILIDAD@DELSUR138SAS.COM.CO","maría pérez",2024-01-04
+"CRM-0228","0581669630","Cafetera 119 S.A.S.","Bogota","6014323113","contabilidad@cafetera119sas.com.co","Paula Ortiz",2024-08-02
+"CRM-0229","0952632102","Tropical 056 S.A.S.","CARTAGENA","+57 6052434044","gerencia@tropical056sas.com.co","Natalia Ríos",2026-01-26
+"CRM-0230","0129844855","CENTRAL 083 S.A.S.","Barranquilla","6057314446","COMPRAS@CENTRAL083SAS.COM.CO","Julián Peña",2026-02-18
+"CRM-0231","0425028553","Tropical 079 S.A.S.","Bogotá D.C.","3579362","contabilidad@tropical079sas.com.co","  Paula   Ortiz",2024-04-29
+"CRM-0232","0822818755","Del Sur 002 S.A.S.","Medellín","3098127198","gerencia@delsur002sas.com.co","JORGE RAMÍREZ",2025-12-05
+"CRM-0233","0643957446","CENTRAL 006 S.A.S.","B/quilla","6057160554","gerencia@central006sas.com.co","Jorge Ramírez",2024-07-10
+"CRM-0234","691733509","Montañera 025 SAS","CALI","(602) 324 7912","contabilidad@montanera025sas.com.co","Felipe Castaño",2025-02-24
+"CRM-0235","0110202025","ANDINA 184 S.A.S.","Medellín","+57 6045725123","gerencia@andina184sas.com.co","Óscar Muñoz",2024-03-24
+"CRM-0236","260138660","Llanera 055 S.A.S.","B/quilla","605-859-0627","gerencia@llanera055sas.com.co","Natalia Ríos",2025-05-27
+"CRM-0237"," 0119446540","LLANERA 030 S.A.S.","Cartagena","+57 3205826419","contabilidad@llanera030sas.com.co","Camila Díaz",2024-06-04
+"CRM-0238","630538004","Nacional 022 S.A.S.","Santa Marta","3178307343",,"  Jorge   Ramírez",2024-11-02
+"CRM-0239","0165518449","Del Valle 032 S.A.S.","PASTO","3121917483","CONTABILIDAD@DELVALLE032SAS.COM.CO","Felipe Castaño",2025-11-25
+"CRM-0240","0322982247","Llanera 115 S.A.S.","Santa Marta","(605) 211 0403","cartera@llanera115sas.com.co","  Andrés   Gómez",2024-02-24
+"CRM-0241","0523027606","Montanera 113 S.A.S.","Pasto","6027232324","contabilidad@montanera113sas.com.co","  María   Pérez",2025-12-13
+"CRM-0242","0932681001","Tropical 136 S.A.S.","Cali","3224828023","cartera@tropical136sas.com.co","CAMILA DÍAZ",2026-01-28
+"CRM-0243","0861370820","Del Sur 016 S.A.S.","Medellín","604-536-2973","cartera@delsur016sas.com.co","Óscar Muñoz",2026-03-20
+"CRM-0244","0606442768","Cafetera 123 S.A.S.","Pasto","6022982473","compras@cafetera123sas.com.co","Julián Peña",2026-01-29
+"CRM-0245","0827689123","Costeña 050 S.A.S.","B/quilla","6058501956","gerencia@costena050sas.com.co","Andrés Gómez",2025-12-08
+"CRM-0246","0783217318","Tropical 189 S.A.S.","Cartagena de Indias","N/A","compras@tropical189sas.com.co","Luisa Fernández",2025-02-16
+"CRM-0247","0298528399","Cafetera 036 S.A.S.","Cali","6022268238","gerencia@cafetera036sas.com.co","Luisa Fernández",2025-03-01
+"CRM-0248","0916743381","CENTRAL 143 S.A.S.","Cartagena de Indias","605-312-1842","gerencia@central143sas.com.co","  Natalia   Ríos",2025-08-12
+"CRM-0249","0883067561","Llanera 041 S.A.S.","Pasto","+57 3174101671","gerencia@llanera041sas.com.co","Andrés Gómez",2026-02-19
+"CRM-0250","0119215075","Caribe 135 SAS","Cali","6023561837","cartera@caribe135sas.com.co","  Jorge   Ramírez",2024-04-06
+"CRM-0251","379.203.925","Central 019 S.A.S.","Bogotá","3131125881","cartera@central019sas.com.co","Camila Díaz",2025-12-27
+"CRM-0252","0923624213","Del Sur 033 S.A.S.","Cúcuta","+57 3101293095","cartera@delsur033sas.com.co","Óscar Muñoz",2024-03-18
+"CRM-0253","0280925233","Central 191 SAS","Bogotá","601-423-4397","compras@central191sas.com.co","MARÍA PÉREZ",2026-03-03
+"CRM-0254","0589292657","Cafetera 034 S.A.S.","BARRANQUILLA","3195407309","compras@cafetera034sas.com.co","  Luisa   Fernández",2024-08-10
+"CRM-0255","0417101903","Tropical 127 S.A.S.","Cali","+57 3088140034",,"  Andrés   Gómez",2025-12-26

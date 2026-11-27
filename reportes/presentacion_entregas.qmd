@@ -1,0 +1,97 @@
+---
+title: "Entregas a domicilio"
+subtitle: "Comité de operaciones, abril de 2026"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    embed-resources: true
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+#| label: datos
+source("../scripts/flujo_entregas.R", chdir = TRUE)
+library(ggplot2)
+carpeta <- "../datos/cap13"
+rutas <- c(
+  list.files(
+    file.path(carpeta, "entregas"),
+    pattern = "\\.csv$",
+    full.names = TRUE
+  ),
+  file.path(carpeta, "abril", "entregas_2026_04.csv")
+)
+pedidos <- leer_crudo(rutas) |> armonizar() |> validar()
+a_domicilio <- dplyr::filter(pedidos, canal != "retiro")
+indicadores <- resumir(pedidos)
+tardias <- dplyr::filter(a_domicilio, tiempo_entrega_h > 20)
+pct_cali <- round(100 * mean(tardias$sucursal == "S03"))
+theme_set(theme_minimal(base_size = 18))
+```
+
+## Dos de cada tres entregas tardías vienen de Cali
+
+```{r}
+#| label: lineas
+#| fig-width: 10
+#| fig-height: 5
+#| fig-alt: "Porcentaje de entregas tardías por mes: Cali en negro, muy por encima de las demás sucursales en gris."
+ggplot(indicadores, aes(mes, pct_tardias, group = sucursal)) +
+  geom_line(
+    data = dplyr::filter(indicadores, sucursal != "S03"),
+    color = "grey80"
+  ) +
+  geom_line(
+    data = dplyr::filter(indicadores, sucursal == "S03"),
+    linewidth = 1.5
+  ) +
+  annotate(
+    "text",
+    x = 4.1,
+    y = 29,
+    label = "Cali",
+    hjust = 0,
+    fontface = "bold",
+    size = 6
+  ) +
+  labs(x = NULL, y = "% de entregas de más de 20 horas")
+```
+
+::: {.notes}
+De `r nrow(tardias)` entregas tardías entre enero y abril, el `r pct_cali` % fueron de Cali.
+:::
+
+## La causa: dos clases de entrega
+
+::: {.columns}
+::: {.column width="55%"}
+- Mensajería en moto: el mismo día, unas **4 horas**
+- Transportadora: al día siguiente, unas **26 horas**
+- La mediana de Cali es la más baja de la red, y aun así es la sucursal más tardía
+:::
+::: {.column width="45%"}
+```{r}
+#| label: cali
+#| fig-width: 5
+#| fig-height: 5
+#| fig-alt: "Histograma de los tiempos de entrega de Cali con dos montañas separadas, una alrededor de 4 horas y otra alrededor de 26."
+ggplot(dplyr::filter(a_domicilio, sucursal == "S03"), aes(tiempo_entrega_h)) +
+  geom_histogram(binwidth = 2, boundary = 0) +
+  labs(x = "horas", y = "pedidos")
+```
+:::
+:::
+
+## Propuesta
+
+1. Revisar con Cali qué pedidos se envían por transportadora y por qué
+2. Medir el tiempo de entrega **por medio de transporte**, no solo por sucursal
+3. Revisar en mayo, con el mismo reporte
+
+::: {.notes}
+El reporte mensual se genera solo; ver el capítulo 15.
+:::

@@ -1,0 +1,6 @@
+# Proyecto aparte para los reportes del capítulo 15: no hereda la configuración del libro.
+project:
+  type: default
+  output-dir: salida
+
+lang: es

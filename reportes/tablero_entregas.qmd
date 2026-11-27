@@ -1,0 +1,236 @@
+---
+title: "Entregas a domicilio"
+format:
+  dashboard:
+    orientation: rows
+    theme: [cosmo, tablero.scss]
+    embed-resources: true
+    nav-buttons: []
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+#| label: datos
+source("../scripts/flujo_entregas.R", chdir = TRUE)
+carpeta <- "../datos/cap13"
+rutas <- c(
+  list.files(
+    file.path(carpeta, "entregas"),
+    pattern = "\\.csv$",
+    full.names = TRUE
+  ),
+  file.path(carpeta, "abril", "entregas_2026_04.csv")
+)
+pedidos <- leer_crudo(rutas) |> armonizar() |> validar()
+a_domicilio <- pedidos |>
+  dplyr::filter(canal != "retiro") |>
+  dplyr::transmute(
+    pedido,
+    fecha = format(fecha, "%Y-%m-%d"),
+    mes = substr(fecha, 1, 7),
+    sucursal,
+    canal,
+    distancia_km,
+    tiempo_entrega_h,
+    valor_pedido,
+    calificacion,
+    devuelto
+  )
+ojs_define(datos = a_domicilio)
+```
+
+```{ojs}
+//| output: false
+pedidos = transpose(datos)
+```
+
+```{ojs}
+//| output: false
+meses = Array.from(new Set(pedidos.map(d => d.mes))).sort()
+```
+
+```{ojs}
+//| output: false
+sucursales = Array.from(new Set(pedidos.map(d => d.sucursal))).sort()
+```
+
+```{ojs}
+//| output: false
+function nombre_mes(m) {
+  return new Date(m + "-15").toLocaleDateString("es-CO", {month: "long", year: "numeric"})
+}
+```
+
+```{ojs}
+//| output: false
+function coma(x, d = 1) { return Number.isFinite(x) ? x.toFixed(d).replace(".", ",") : "sin datos" }
+```
+
+```{ojs}
+//| output: false
+function tarjeta(valor, nota, alerta = false) {
+  const color = alerta ? "#b22222" : "#1a1a1a"
+  const icono = alerta ? `<i class="bi bi-exclamation-triangle-fill"></i> ` : ""
+  return html`<div style="padding: 0.2rem 0.4rem">
+    <div style="font-size: 2.4rem; font-weight: 700; line-height: 1.1; color: ${color}">${valor}</div>
+    <div style="color: ${alerta ? color : "#666"}; font-size: 0.95rem">${html([icono + nota])}</div>
+  </div>`
+}
+```
+
+# {.sidebar}
+
+```{ojs}
+viewof mes = Inputs.select(meses, {value: meses[meses.length - 1], label: "Mes", format: nombre_mes})
+```
+
+```{ojs}
+viewof sucursal = Inputs.select(["Toda la red", ...sucursales], {value: "S03", label: "Sucursal"})
+```
+
+```{ojs}
+viewof meta = Inputs.range([5, 30], {value: 10, step: 1, label: "Meta de tardías (%)"})
+```
+
+Los datos vienen del flujo de entregas. Los filtros cambian todo el tablero. Cuando las entregas tardías superan la meta, el indicador se marca en rojo y con un ícono de alerta.
+
+```{ojs}
+seleccion.length < 30
+  ? html`<p><strong>Atención:</strong> ${seleccion.length} pedidos en la selección; los porcentajes son poco confiables.</p>`
+  : html``
+```
+
+```{ojs}
+//| output: false
+del_mes = pedidos.filter(d => d.mes === mes)
+```
+
+```{ojs}
+//| output: false
+seleccion = sucursal === "Toda la red" ? del_mes : del_mes.filter(d => d.sucursal === sucursal)
+```
+
+```{ojs}
+//| output: false
+pct_tardias = seleccion.length ? 100 * d3.mean(seleccion, d => d.tiempo_entrega_h > 20) : NaN
+```
+
+```{ojs}
+//| output: false
+con_nota = seleccion.filter(d => typeof d.calificacion === "number")
+```
+
+```{ojs}
+//| output: false
+serie = d3.flatRollup(pedidos, v => 100 * d3.mean(v, d => d.tiempo_entrega_h > 20),
+                      d => d.sucursal, d => d.mes)
+          .map(([sucursal, mes, pct]) => ({sucursal, mes, pct}))
+```
+
+```{ojs}
+//| output: false
+ranking = d3.flatRollup(del_mes,
+                        v => ({n: v.length, pct: 100 * d3.mean(v, d => d.tiempo_entrega_h > 20)}),
+                        d => d.sucursal)
+            .map(([sucursal, r]) => ({sucursal, ...r}))
+```
+
+# Resumen
+
+## Fila {height="22%"}
+
+```{ojs}
+//| title: "Pedidos a domicilio"
+tarjeta(seleccion.length.toLocaleString("es-CO"), `${sucursal}, ${nombre_mes(mes)}`)
+```
+
+```{ojs}
+//| title: "Entregas de más de 20 horas"
+tarjeta(coma(pct_tardias) + " %",
+        pct_tardias > meta ? `supera la meta de ${meta} %` : `dentro de la meta de ${meta} %`,
+        pct_tardias > meta)
+```
+
+```{ojs}
+//| title: "Mediana de horas de entrega"
+tarjeta(coma(d3.median(seleccion, d => d.tiempo_entrega_h)), "la mitad de los pedidos llega antes")
+```
+
+```{ojs}
+//| title: "Calificación promedio"
+tarjeta(coma(d3.mean(con_nota, d => d.calificacion)) + " / 5",
+        `${con_nota.length} de ${seleccion.length} pedidos con calificación`)
+```
+
+## Fila
+
+```{ojs}
+//| title: "Entregas tardías por mes"
+Plot.plot({
+  height: 380, marginLeft: 40,
+  y: {label: "%", grid: true},
+  x: {label: null, type: "point", tickFormat: m => nombre_mes(m).split(" ")[0]},
+  marks: [
+    Plot.line(serie, {x: "mes", y: "pct", z: "sucursal", stroke: "#d0d0d0"}),
+    Plot.line(serie.filter(d => d.sucursal === sucursal),
+              {x: "mes", y: "pct", stroke: "#1a1a1a", strokeWidth: 3}),
+    Plot.ruleY([meta], {stroke: "#b22222", strokeDasharray: "4,3"}),
+    Plot.dot(serie, {x: "mes", y: "pct", r: 3,
+                     fill: d => d.sucursal === sucursal ? "#1a1a1a" : "#d0d0d0",
+                     tip: true, channels: {sucursal: "sucursal"}})
+  ]
+})
+```
+
+```{ojs}
+//| title: "Distribución de los tiempos de entrega"
+Plot.plot({
+  height: 380, marginLeft: 40,
+  x: {label: "horas"}, y: {label: "pedidos", grid: true},
+  marks: [
+    Plot.rectY(seleccion, Plot.binX({y: "count"},
+                                    {x: "tiempo_entrega_h", thresholds: 34, fill: "#4d4d4d", tip: true})),
+    Plot.ruleX([20], {stroke: "#b22222", strokeDasharray: "4,3"})
+  ]
+})
+```
+
+```{ojs}
+//| title: "Sucursales en el mes"
+Plot.plot({
+  height: 380, marginLeft: 45,
+  x: {label: "% de entregas tardías", grid: true},
+  y: {label: null},
+  marks: [
+    Plot.barX(ranking, {y: "sucursal", x: "pct", sort: {y: "-x"},
+                        fill: d => d.pct > meta ? "#b22222" : d.sucursal === sucursal ? "#1a1a1a" : "#bdbdbd",
+                        tip: true, channels: {pedidos: "n"}}),
+    Plot.ruleX([meta], {stroke: "#b22222", strokeDasharray: "4,3"})
+  ]
+})
+```
+
+# Pedidos
+
+## Fila {height="12%"}
+
+```{ojs}
+viewof busqueda = Inputs.search(seleccion, {placeholder: "Buscar un pedido, una fecha o un canal",
+                                           format: n => `${n.toLocaleString("es-CO")} pedidos`})
+```
+
+## Fila
+
+```{ojs}
+//| title: "Pedidos de la selección"
+Inputs.table(busqueda, {
+  columns: ["pedido", "fecha", "sucursal", "canal", "distancia_km", "tiempo_entrega_h",
+            "valor_pedido", "calificacion", "devuelto"],
+  header: {distancia_km: "km", tiempo_entrega_h: "horas", valor_pedido: "valor",
+           calificacion: "calificación"},
+  sort: "tiempo_entrega_h", reverse: true, rows: 25, locale: "es-CO"
+})
+```

@@ -1,0 +1,4 @@
+# Archivos que se generan al trabajar el capítulo 5
+cartera_2026_02.parquet
+cartera_2026_02_duckdb.parquet
+visitas_comerciales.parquet
