@@ -1,0 +1,101 @@
+---
+title: "Entregas a domicilio: `r params$sucursal`, `r format(as.Date(paste0(params$mes, '-01')), '%m/%Y')`"
+format:
+  html:
+    embed-resources: true
+params:
+  sucursal: "S03"
+  mes: "2026-04"
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+#| label: preparar
+source("../scripts/flujo_entregas.R", chdir = TRUE)
+library(ggplot2)
+
+carpeta <- "../datos/cap13"
+rutas <- c(
+  list.files(
+    file.path(carpeta, "entregas"),
+    pattern = "\\.csv$",
+    full.names = TRUE
+  ),
+  file.path(carpeta, "abril", "entregas_2026_04.csv")
+)
+pedidos <- leer_crudo(rutas) |> armonizar() |> validar()
+indicadores <- resumir(pedidos)
+
+mes_reporte <- dplyr::filter(indicadores, mes == params$mes)
+esta <- dplyr::filter(mes_reporte, sucursal == params$sucursal)
+red <- dplyr::filter(
+  pedidos,
+  canal != "retiro",
+  format(fecha, "%Y-%m") == params$mes
+)
+pct_red <- round(100 * mean(red$tiempo_entrega_h > 20), 1)
+
+numero <- function(x, digitos = 1) {
+  format(round(x, digitos), big.mark = ".", decimal.mark = ",")
+}
+contar <- function(n, singular, plural) {
+  paste(n, if (n == 1) singular else plural)
+}
+```
+
+## Resumen
+
+En el mes, la sucursal **`r params$sucursal`** entregó **`r contar(esta$pedidos, "pedido", "pedidos")`** a domicilio. La mitad llegó en menos de **`r numero(esta$mediana_horas)` horas**, y el **`r numero(esta$pct_tardias)` %** tardó más de 20 horas, frente al `r numero(pct_red)` % del conjunto de la red. El `r numero(esta$pct_devueltos)` % de los pedidos fue devuelto.
+
+`r if (esta$pedidos < 30) "**Atención:** con menos de 30 pedidos en el mes, estos porcentajes cambian mucho con un solo pedido y no conviene compararlos con los de otras sucursales."`
+
+## Evolución
+
+```{r}
+#| label: evolucion
+#| fig-height: 3
+#| fig-alt: "Porcentaje de entregas tardías por mes: la sucursal del reporte en negro y las demás en gris."
+ggplot(indicadores, aes(mes, pct_tardias, group = sucursal)) +
+  geom_line(
+    data = dplyr::filter(indicadores, sucursal != params$sucursal),
+    color = "grey80"
+  ) +
+  geom_line(
+    data = dplyr::filter(indicadores, sucursal == params$sucursal),
+    linewidth = 1.2
+  ) +
+  geom_point(
+    data = dplyr::filter(indicadores, sucursal == params$sucursal),
+    size = 2
+  ) +
+  labs(
+    x = NULL,
+    y = "% de entregas tardías",
+    title = paste(
+      "Entregas tardías de",
+      params$sucursal,
+      "frente al resto de la red"
+    )
+  ) +
+  theme_minimal(base_size = 11)
+```
+
+## Todas las sucursales en el mes
+
+```{r}
+#| label: tabla
+mes_reporte |>
+  dplyr::transmute(
+    Sucursal = sucursal,
+    Pedidos = pedidos,
+    `Mediana (horas)` = numero(mediana_horas),
+    `% tardías` = numero(pct_tardias),
+    `% devueltos` = numero(pct_devueltos)
+  ) |>
+  knitr::kable(align = "lrrrr")
+```
+
+*Fuente: flujo de entregas del capítulo 13. Generado el `r format(Sys.Date(), "%d/%m/%Y")`.*

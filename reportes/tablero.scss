@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+$navbar-bg: #1a1a1a;
+$body-bg: #f4f4f4;
+$font-family-sans-serif: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+$primary: #1a1a1a;
+
+/*-- scss:rules --*/
+.card {
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+}
+.card-header {
+  background: #ffffff;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bslib-value-box .value-box-value {
+  font-weight: 700;
+}
+.sidebar {
+  background: #ffffff;
+}
